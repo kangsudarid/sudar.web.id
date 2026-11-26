@@ -9,23 +9,23 @@
  * The document language is `zh-CN`, not `zh`: DabFonts TYPESETTING.md §7
  * requires it, and English runs inside a Chinese page carry `lang="en"`.
  */
-export const locales = ["en", "zh"] as const;
+export const locales = ["en", "id"] as const;
 
 export type Locale = (typeof locales)[number];
 
-export const defaultLocale: Locale = "en";
+export const defaultLocale: Locale = "id";
 
 /** A value that exists in every locale. Proper nouns stay plain strings. */
 export type Localized<T = string> = { [L in Locale]: T };
 
 /** BCP 47 tag for `<html lang>`, `<time lang>`, and `hreflang`. */
-export function htmlLang(locale: Locale): "en" | "zh-CN" {
-  return locale === "zh" ? "zh-CN" : "en";
+export function htmlLang(locale: Locale): "en" | "id-ID" {
+  return locale === "id" ? "id-ID" : "en";
 }
 
 /** The other locale, for the language switch and the alternate routes. */
 export function otherLocale(locale: Locale): Locale {
-  return locale === defaultLocale ? "zh" : "en";
+  return locale === defaultLocale ? "id" : "en";
 }
 
 /**
