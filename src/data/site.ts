@@ -15,7 +15,7 @@ import type { Localized } from "../lib/i18n";
  */
 const role = {
   en: "Forward Deployed Engineer",
-  id: " Catatan Kang Sudar",
+  zh: " Catatan Kang Sudar",
 } satisfies Localized;
 
 const site = {
@@ -25,7 +25,7 @@ const site = {
   role,
   description: {
     en: "Forward deployed engineer working between customers and engineering, building things that make noise — in code, in sound and in pixels.",
-    id: " Blog yang berisi pengalaman, tutorial dan notes tidak penting",
+    zh: " Blog yang berisi pengalaman, tutorial dan notes tidak penting",
   } satisfies Localized,
 
   /** The short line under the wordmark on the OG card; the role is the tagline. */
@@ -34,13 +34,13 @@ const site = {
   /** Open Graph locale identifiers, underscore form. */
   ogLocale: {
     en: "en_US",
-    id: "id_ID",
+    zh: "id_ID",
   } satisfies Localized,
 
   /** One default OG card per locale (1200×630, light theme). */
   ogImage: {
     en: "/og/en.png",
-    id: "/og/zh.png",
+    zh: "/og/zh.png",
   } satisfies Localized,
 
   /** Plate master and its exports (rule 10 §4). */
