@@ -19,8 +19,8 @@ const role = {
 } satisfies Localized;
 
 const site = {
-  name: "DabAZ",
-  url: "https://dabaz.me",
+  name: "Kang Sudar",
+  url: "https://sudar.web.id",
   email: "hi@dabaz.me",
   role,
   description: {
